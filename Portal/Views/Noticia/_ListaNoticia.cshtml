@@ -1,0 +1,6 @@
+﻿@model IList<VirouManchete.Entidade.Noticia>
+
+@foreach (var manchete in Model)
+{
+    <li class="@manchete.Formato" ><span>@manchete.Visualizacoes</span> <a target="_blank" href="/noticia/ler/@manchete.Id" title="@manchete.Titulo">@manchete.Titulo</a></li>
+}

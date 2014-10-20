@@ -1,0 +1,99 @@
+﻿/*-----------------------------------------------------------------------------
+Virou Manchete (Portal)
+versão               : 1.0
+email                : diogolmenezes@gmail.com
+data de criacao      : 15-06-2013
+-----------------------------------------------------------------------------*/
+
+/* =Geral
+-----------------------------------------------------------------------------*/
+* { margin:0px; padding:0px; list-style:none; }
+fieldset { border:none; }
+body    { font:13px 'Asap', Arial; }
+a       { color:#0B93B5; }
+h2      { font-size:25px; margin-bottom:30px; color:#435663; }
+p       { font-size:17px; margin-bottom:20px; }
+ol li   { list-style: decimal;  margin-left:20px;  }
+
+
+/* =Estrutura
+-----------------------------------------------------------------------------*/
+header nav       { float:right;margin:20px 0px; }
+header nav ul li { display:inline; margin-left:20px; font-size:18px; }
+header nav ul li a { color:#536A79; text-decoration:underline; }
+header h1 { width:465px; margin:auto; margin-bottom:20px; font:normal 70px 'Oleo Script', Arial; background:url(img/megafone.png) 1px 3px no-repeat; padding-left:88px; }
+header h1 a { color:#FFF; text-decoration:none; }
+header p { color:#13C5F1; font-size:25px; }
+header p span { color:#FFF; font-size:22px; }
+header #informacao { margin-bottom:30px; clear:both; background:#181819; border-bottom:5px solid #DDDDDD; padding:30px 10px; }
+footer   { background:#35444F; color:#FFF; text-align:center; padding:40px; border-top:5px solid #DDDDDD; }
+footer a { color:#FFF; }
+
+
+
+/* =Gerador
+-----------------------------------------------------------------------------*/
+#gerador #formato             { float:left; }
+#gerador #formato ul          { width:550px;  }
+#gerador #formato ul li       { float:left; margin-right:20px; text-align:center; }
+#gerador #formato ul li div   { margin:auto; margin-bottom:60px; }
+#gerador #formato ul li h5    { font-size:15px; margin-bottom:10px; }
+#gerador #formato ul li img   { display:block;  margin-bottom:10px; }
+#gerador #formato ul li input { margin-bottom:60px; } 
+#gerador .g1 img  { border:4px solid #730000; } 
+#gerador .ge img  { border:4px solid #4D6D0B; }
+#gerador .ego img { border:4px solid #7892A3; }
+#gerador .car img { border:4px solid #ED1C24; }
+#gerador .lce img { border:4px solid #FFB300; }
+#gerador .dia img { border:4px solid #DAC602; }
+#gerador #cadastro { float:right; }
+#gerador  textarea { height:100px !important; }
+#link-noticia   { clear:both; padding:15px; margin-top:20px; -moz-border-radius: 4px; -webkit-border-radius: 4px; -khtml-border-radius: 4px; border-radius: 4px; display:block; background:#59B200; color:#FFF; text-decoration:none; text-align:center; font-size:25px; }
+#link-noticia a { text-decoration: underline; color: #FFF; }
+
+
+/* =Status
+-----------------------------------------------------------------------------*/
+#status         { border-top:1px solid #f5f5f5; padding:40px 0px; clear:both; margin:0px 0px;  }
+#status ul li   { padding-bottom:20px; margin-top:20px; border-bottom:1px solid #f5f5f5; font-size:15px; }
+#status ul li a { color:#536A79; text-decoration:none; }
+#status ul li a:hover { text-decoration:underline; }
+#status ul li span { float:left; background:#536A79; color:#FFF; padding:3px 10px; font-weight:bold; -moz-border-radius: 4px; -webkit-border-radius: 4px; -khtml-border-radius: 4px; border-radius: 4px; width:35px; text-align:center; margin-right:10px; }
+#status #mais-visualizadas { float:left;  width:470px; }
+#status #recentes          { float:right; width:470px; }
+#status #recentes ul li    { background:url(img/icon-megafone.png) 0px 3px no-repeat; padding-left:25px;  }
+
+#status .mais-noticias { background:#536A79; padding:5px 10px; color:#FFF; text-decoration:none; margin-top:20px; display:block; width:65px; float:right; }
+
+
+
+
+
+
+
+
+/* =Noticias
+-----------------------------------------------------------------------------*/
+#noticias ul            {}
+#noticias ul li         { padding-bottom:20px; margin-top:20px; border-bottom:1px solid #f5f5f5; font-size:15px; }
+#noticias ul li a       { color:#536A79; text-decoration:none; }
+#noticias ul li a:hover { text-decoration:underline;  }
+#noticias ul li span    { float:left; background:#536A79; color:#FFF; padding:3px 10px; font-weight:bold; -moz-border-radius: 4px; -webkit-border-radius: 4px; -khtml-border-radius: 4px; border-radius: 4px; width:35px; text-align:center; margin-right:10px; }
+
+
+/* =Util
+-----------------------------------------------------------------------------*/
+.limite        { width:1000px; margin:auto; }
+.campo, .botao { font:normal 18px 'Asap', Arial; color:#678598; padding:5px 15px; display:block; margin-bottom:20px; width:400px; height:35px; background:#F3F3F3; border:none; border-bottom:1px solid #BFC4CC; }
+.botao         { background:#258ECD url(img/bg-btn.png) repeat-x; color:#FFF; height:50px; font-size:25px; text-align:center;width:100%; }
+.input-validation-error { background:#FFF2F7;  }
+.field-validation-error {  color:#B8343E; padding:5px 20px 5px 0px; margin-top:-15px; margin-bottom:5px; display:block; }
+.barra-social { clear:both; padding:5px !important; position:fixed !important; top:380px !important; right:25px !important; width:55px; text-align:center; border:2px solid #EEEEEE; display:block !important;  -moz-border-radius: 4px; -webkit-border-radius: 4px; -khtml-border-radius: 4px; border-radius: 4px;  }
+.barra-social .fb { height:75px !important; }
+#voltar-para-topo { background:url(img/voltar-topo.png) no-repeat; width:45px; height:45px; display:block; position:fixed; bottom:20px; right:30px; cursor:pointer; display:none; }
+.lce  span { border-left:5px solid #FFB300; padding-left:10px; }
+.g1   span { border-left:5px solid #730000; padding-left:10px; }
+.ego  span { border-left:5px solid #7892A3; padding-left:10px; }
+.car  span { border-left:5px solid #ED1C24; padding-left:10px; }
+.dia  span { border-left:5px solid #DAC602; padding-left:10px; }
+.ge   span { border-left:5px solid #4D6D0B; padding-left:10px; }

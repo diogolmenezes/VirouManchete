@@ -1,0 +1,34 @@
+﻿@model IList<VirouManchete.Entidade.Noticia>
+@section headScripts{
+<script type="text/javascript">
+     $(window).scroll(function () {
+         if ($(window).scrollTop() + $(window).height() >= $(document).height()) {             
+            CarregarNoticias();
+            
+        }
+    });
+
+    var _inCallback = false;
+    var _inicio = 10;
+    function CarregarNoticias() {
+        if (!_inCallback) {
+            _inCallback = true;
+            $.get("/Noticia/ListarNoticias/" + _inicio, function (data) {
+                if (data != '') {
+                    $("#lista-manchetes ul").append(data);
+                    _inicio += 15;
+                }
+                _inCallback = false;
+            });
+        }
+    }
+</script>
+}
+<section id="noticias">
+    <h2>Todas as manchetes</h2>
+    <nav id="lista-manchetes">
+        <ul>
+            @Html.Partial("_ListaNoticia", Model)
+        </ul>
+    </nav>
+</section>

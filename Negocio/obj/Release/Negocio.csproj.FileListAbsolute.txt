@@ -1,0 +1,11 @@
+C:\Users\Diogo\Documents\Projetos\VirouManchete\Negocio\bin\Release\VirouManchete.Negocio.dll
+C:\Users\Diogo\Documents\Projetos\VirouManchete\Negocio\bin\Release\VirouManchete.Negocio.pdb
+C:\Users\Diogo\Documents\Projetos\VirouManchete\Negocio\bin\Release\VirouManchete.Database.dll
+C:\Users\Diogo\Documents\Projetos\VirouManchete\Negocio\bin\Release\VirouManchete.Entidade.dll
+C:\Users\Diogo\Documents\Projetos\VirouManchete\Negocio\bin\Release\EntityFramework.dll
+C:\Users\Diogo\Documents\Projetos\VirouManchete\Negocio\bin\Release\VirouManchete.Database.pdb
+C:\Users\Diogo\Documents\Projetos\VirouManchete\Negocio\bin\Release\VirouManchete.Entidade.pdb
+C:\Users\Diogo\Documents\Projetos\VirouManchete\Negocio\bin\Release\EntityFramework.xml
+C:\Users\Diogo\Documents\Projetos\VirouManchete\Negocio\obj\Release\Negocio.csprojResolveAssemblyReference.cache
+C:\Users\Diogo\Documents\Projetos\VirouManchete\Negocio\obj\Release\VirouManchete.Negocio.dll
+C:\Users\Diogo\Documents\Projetos\VirouManchete\Negocio\obj\Release\VirouManchete.Negocio.pdb

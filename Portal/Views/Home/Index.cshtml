@@ -1,0 +1,94 @@
+﻿@model VirouManchete.Entidade.Noticia
+
+<section id="gerador">
+    @using (Html.BeginForm("Criar", "Noticia", FormMethod.Post, new { enctype = "multipart/form-data" })) 
+    {
+	<div id="formato">
+        <h2>escolha um formato</h2>
+        <nav>
+            <ul>
+                <li class="g1">
+                    <img src="/content/img/g1.jpg" alt="G1" title="G1" />
+                    <input name="rdFormato" type="radio" value="g1" class="iradio_square" checked="checked" />
+                </li>
+                <li class="ge">
+                    <img src="/content/img/ge.jpg" alt="Globo Esporte" title="Globo Esporte" />
+                    <input name="rdFormato" type="radio" value="ge" />
+                </li>
+                <li class="lce">
+                    <img src="/content/img/lce.jpg" alt="Lance" title="Lance" />
+                    <input name="rdFormato" type="radio" value="lce" />
+                </li>
+                 <li class="dia">
+                    <img src="/content/img/dia.jpg" alt="O Dia" title="O Dia" />
+                    <input name="rdFormato" type="radio" value="dia" />
+                </li>
+                 <li class="ego">
+                    <img src="/content/img/ego.jpg" alt="Ego" title="Ego" /> 
+                    <input name="rdFormato" type="radio" value="ego" />
+                </li>
+                 <li class="car">
+                    <img src="/content/img/car.jpg" alt="Caras" title="Caras" />
+                    <input name="rdFormato" type="radio" value="car" />
+                </li>
+            </ul>
+        </nav>
+
+	</div>
+	<div id="cadastro">
+        <h2>insira a notícia</h2>
+        <fieldset>           
+            @Html.TextBoxFor(x => x.Titulo, new { @class = "campo apagarNoFoco", maxlength = "300", valorPadrao = "Título" })
+            @Html.ValidationMessageFor(x => x.Titulo)
+            @Html.TextBoxFor(x => x.SubTitulo, new { @class = "campo apagarNoFoco", maxlength = "300", valorPadrao = "Subtítulo" })
+            @Html.ValidationMessageFor(x => x.SubTitulo)
+            @Html.TextAreaFor(x => x.Texto, new { @class = "campo apagarNoFoco", valorPadrao = "Texto" })
+            @Html.ValidationMessageFor(x => x.Texto)           
+            <input type="file" name="Upload" id="Upload" class="campo"  />
+            @Html.ValidationMessageFor(x => x.Upload)
+            @Html.ValidationMessage("Imagem")
+
+            
+
+            <input type="submit" class="botao" value="criar" />
+        </fieldset>
+	</div>
+     }
+
+    <br clear="all"/>
+
+    @if (!String.IsNullOrEmpty(ViewBag.Noticia))
+    {           
+        <p id="link-noticia" style="display:none;">Tudo certo! <a href="@ViewBag.Noticia">Ver a notícia</a></p>
+    }
+
+</section>
+
+<section id="status">
+	<nav id="mais-visualizadas">
+        <h2>mais visualizadas</h2>
+		<ul>
+            @foreach (var top in (System.Collections.Generic.IList<VirouManchete.Entidade.Noticia>)ViewBag.MaisVistas)
+            {
+                <li class="@top.Formato" ><span>@top.Visualizacoes</span> <a target="_blank" href="/noticia/ler/@top.Id" title="@top.Titulo">@top.Titulo</a></li>
+            }
+		</ul>
+        <a class="mais-noticias" href="/noticia/?t=v">ver todas+</a>
+	</nav>	        
+    <nav id="recentes">
+        <h2>mais recentes</h2>
+		<ul>
+            @foreach (var recente in (System.Collections.Generic.IList<VirouManchete.Entidade.Noticia>)ViewBag.MaisRecentes)
+            {
+                <li><a target="_blank" href="/noticia/ler/@recente.Id" title="@recente.Titulo">@recente.Titulo</a></li>
+            }
+		</ul>
+        <a class="mais-noticias" href="/noticia/?t=r">ver todas+</a>
+	</nav>	
+	
+</section>
+<br clear="all" />
+<br clear="all" />
+<br clear="all" />
+<br clear="all" />
+<br clear="all" />

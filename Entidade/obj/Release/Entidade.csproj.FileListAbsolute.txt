@@ -1,0 +1,7 @@
+C:\Users\Diogo\Documents\Projetos\VirouManchete\Entidade\bin\Release\VirouManchete.Entidade.dll
+C:\Users\Diogo\Documents\Projetos\VirouManchete\Entidade\bin\Release\VirouManchete.Entidade.pdb
+C:\Users\Diogo\Documents\Projetos\VirouManchete\Entidade\bin\Release\EntityFramework.dll
+C:\Users\Diogo\Documents\Projetos\VirouManchete\Entidade\bin\Release\EntityFramework.xml
+C:\Users\Diogo\Documents\Projetos\VirouManchete\Entidade\obj\Release\Entidade.csprojResolveAssemblyReference.cache
+C:\Users\Diogo\Documents\Projetos\VirouManchete\Entidade\obj\Release\VirouManchete.Entidade.dll
+C:\Users\Diogo\Documents\Projetos\VirouManchete\Entidade\obj\Release\VirouManchete.Entidade.pdb
